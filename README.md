@@ -1,4 +1,4 @@
-# Legal-QA-Multi-Agent-Harness
+# Legal QA Multi Agent Harness
 
 **한국어 법률 답변의 법조문 인용 오류를 측정하고, 검색·검증·국소 수정으로 줄이는 연구 프로젝트입니다.**
 
