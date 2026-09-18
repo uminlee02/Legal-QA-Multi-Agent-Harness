@@ -1,0 +1,5 @@
+﻿id,arm,cites,fake,sfake,mism,gold_hit,gold_tot,search,fact,logic,tools_total,steps,end,loop,fmt_errors,seq
+qa_19_1hop_28,A,4,0,0,0,0,1,1,2,2,5,2,finish,0,0,검색→생성→사실검증→논리검증→재생성→사실검증→논리검증→종료
+qa_19_1hop_28,B,1,0,0,0,0,1,1,0,0,1,2,finish,0,0,검색:법조문 데이터베이스에서 관련 조문을 더 찾아→종료
+qa_92_1hop_149,A,7,0,0,0,1,1,1,1,1,3,1,finish,0,0,검색→생성→사실검증→논리검증→종료
+qa_92_1hop_149,B,7,0,0,0,1,1,1,0,0,1,2,finish,0,0,검색:야간 주거침입절도 관련 법조문→종료
