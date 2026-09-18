@@ -1,0 +1,5 @@
+condition,loose_fake,strict_fake,content_mismatch,gold_hit,gold_tot,gold_recall_pct,regen_sum
+① 순수 생성,0.2203,0.6014,265,49,398,12.3,0
+② RAG-only,0.0374,0.0413,1,194,398,48.7,0
+③ 풀스택(근거X 검증),0.0361,0.0563,11,196,398,49.2,158
+④ 풀스택(근거O 검증),0.0380,0.0527,8,197,398,49.5,207

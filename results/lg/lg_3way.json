@@ -1,0 +1,99 @@
+{
+  "benchmark": "KoBLEX",
+  "gen": "Qwen3.5-27B",
+  "scorer": "법제처 Open API(real) + lawcheck v1",
+  "n": {
+    "pure/full": 226,
+    "ragonly": 226
+  },
+  "conditions": {
+    "1_pure": {
+      "loose": 0.22029372496662217,
+      "strict": 0.6013986013986014,
+      "n": 781,
+      "fake": 165,
+      "unc": 32,
+      "sfake": 430,
+      "cunk": 34,
+      "mism": 265,
+      "ld": 749,
+      "sd": 715,
+      "gold_hit": 49,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "2_ragonly": {
+      "loose": 0.037383177570093455,
+      "strict": 0.04133858267716536,
+      "n": 571,
+      "fake": 20,
+      "unc": 36,
+      "sfake": 21,
+      "cunk": 27,
+      "mism": 1,
+      "ld": 535,
+      "sd": 508,
+      "gold_hit": 194,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "3_full": {
+      "loose": 0.03607503607503607,
+      "strict": 0.05625,
+      "n": 757,
+      "fake": 25,
+      "unc": 64,
+      "sfake": 36,
+      "cunk": 53,
+      "mism": 11,
+      "ld": 693,
+      "sd": 640,
+      "gold_hit": 196,
+      "gold_tot": 398,
+      "domain_dist": {
+        "civil": 61,
+        "criminal": 68,
+        "other": 97
+      },
+      "retry_sum": 158,
+      "fact_gate_run": 226,
+      "gate_pass_clean": 210
+    }
+  },
+  "reductions": {
+    "①→② (RAG 순효과)": {
+      "loose_pct": 83.03030303030303,
+      "strict_pct": 93.12625892693646,
+      "loose_from": 0.22029372496662217,
+      "loose_to": 0.037383177570093455,
+      "strict_from": 0.6013986013986014,
+      "strict_to": 0.04133858267716536
+    },
+    "②→③ (검증·멀티에이전트 순효과)": {
+      "loose_pct": 3.4992784992784993,
+      "strict_pct": -36.07142857142856,
+      "loose_from": 0.037383177570093455,
+      "loose_to": 0.03607503607503607,
+      "strict_from": 0.04133858267716536,
+      "strict_to": 0.05625
+    },
+    "①→③ (전체 효과)": {
+      "loose_pct": 83.62411998775634,
+      "strict_pct": 90.64680232558139,
+      "loose_from": 0.22029372496662217,
+      "loose_to": 0.03607503607503607,
+      "strict_from": 0.6013986013986014,
+      "strict_to": 0.05625
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "conditions": {
+    "①순수": {
+      "loose": 0.22029372496662217,
+      "strict": 0.6013986013986014,
+      "n": 781,
+      "fake": 165,
+      "unc": 32,
+      "sfake": 430,
+      "cunk": 34,
+      "mism": 265,
+      "ld": 749,
+      "sd": 715,
+      "gold_hit": 49,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "②RAGonly": {
+      "loose": 0.037383177570093455,
+      "strict": 0.04133858267716536,
+      "n": 571,
+      "fake": 20,
+      "unc": 36,
+      "sfake": 21,
+      "cunk": 27,
+      "mism": 1,
+      "ld": 535,
+      "sd": 508,
+      "gold_hit": 194,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "③풀스택-재생성": {
+      "loose": 0.03607503607503607,
+      "strict": 0.05625,
+      "n": 757,
+      "fake": 25,
+      "unc": 64,
+      "sfake": 36,
+      "cunk": 53,
+      "mism": 11,
+      "ld": 693,
+      "sd": 640,
+      "gold_hit": 196,
+      "gold_tot": 398,
+      "domain_dist": {
+        "civil": 61,
+        "criminal": 68,
+        "other": 97
+      },
+      "retry_sum": 158,
+      "fact_gate_run": 226,
+      "gate_pass_clean": 210
+    },
+    "⑥풀스택-타겟편집": {
+      "loose": 0.015698587127158554,
+      "strict": 0.026936026936026935,
+      "n": 700,
+      "fake": 10,
+      "unc": 63,
+      "sfake": 16,
+      "cunk": 43,
+      "mism": 6,
+      "ld": 637,
+      "sd": 594,
+      "gold_hit": 197,
+      "gold_tot": 398,
+      "domain_dist": {
+        "civil": 61,
+        "criminal": 68,
+        "other": 97
+      },
+      "retry_sum": 44,
+      "fact_gate_run": 226,
+      "gate_pass_clean": 217
+    }
+  },
+  "reductions": {
+    "3to6": {
+      "loose": 56.48351648351648,
+      "strict": 52.113729891507674
+    },
+    "2to6": {
+      "loose": 58.00627943485086,
+      "strict": 34.84046817380151
+    }
+  },
+  "transitions_vs2": {
+    "3": {
+      "fixed": 3,
+      "broke": 12
+    },
+    "6": {
+      "fixed": 9,
+      "broke": 7
+    }
+  }
+}

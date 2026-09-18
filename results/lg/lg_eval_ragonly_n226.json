@@ -1,0 +1,4552 @@
+{
+  "n": 226,
+  "gen": "Qwen3.5-27B",
+  "logic": "DeepSeek-R1-Distill-Qwen-32B",
+  "mode": "baseline",
+  "baseline_rag": true,
+  "conditions": {
+    "baseline": {
+      "loose": 0.037383177570093455,
+      "strict": 0.04133858267716536,
+      "n": 571,
+      "fake": 20,
+      "unc": 36,
+      "sfake": 21,
+      "cunk": 27,
+      "mism": 1,
+      "ld": 535,
+      "sd": 508,
+      "gold_hit": 194,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    }
+  },
+  "n_done": 226,
+  "per_item": [
+    {
+      "id": "qa_19_1hop_28",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_92_1hop_149",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_139_1hop_254",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_172_1hop_308",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_90_2hop_147",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_192_2hop_334",
+      "baseline": {
+        "n": 6,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_312_2hop_499",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_387_2hop_603",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_476_2hop_749",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 1,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_621_2hop_937",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_49_2hop_192_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_116_2hop_452_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_163_2hop_630_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_213_2hop_812_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_257_2hop_983_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_140_3hop_540_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_86_3hop_140",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_352_3hop_554",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_61_1hop_93",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_94_1hop_155",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_140_1hop_257",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_174_1hop_312",
+      "baseline": {
+        "n": 6,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 3,
+        "mism": 0,
+        "ld": 6,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.16666666666666666,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_99_2hop_168",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_324_2hop_515",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_401_2hop_619",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_488_2hop_766",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 4,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_624_2hop_943",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_59_2hop_232_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_119_2hop_464_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_171_2hop_658_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_215_2hop_820_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_260_2hop_995_rand",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 5,
+        "sd": 5,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_279_3hop_1064_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_102_3hop_175",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_422_3hop_653",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_24_1hop_35",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 5,
+        "sd": 5,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_62_1hop_94",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_95_1hop_156",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_141_1hop_258",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_113_2hop_200",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_330_2hop_525",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_406_2hop_622",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_503_2hop_790",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_633_2hop_954",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_62_2hop_244_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_124_2hop_480_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_174_2hop_666_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_216_2hop_824_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_82_3hop_235_rand2",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 3,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_127_3hop_230",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_430_3hop_669",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_25_1hop_37",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_64_1hop_95",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_99_1hop_167",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_145_1hop_267",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_192_1hop_333",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_115_2hop_204",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_332_2hop_531",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_522_2hop_806",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_644_2hop_973",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_63_2hop_248_rand",
+      "baseline": {
+        "n": 7,
+        "fake": 2,
+        "unc": 1,
+        "sfake": 2,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 6,
+        "sd": 5,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_129_2hop_497_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_180_2hop_689_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_226_2hop_860_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_286_2hop_1091_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_144_3hop_410_rand2",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_131_3hop_237",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_441_3hop_696",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_26_1hop_39",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_102_1hop_173",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_3_2hop_6",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_116_2hop_208",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_202_2hop_350",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_339_2hop_536",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_409_2hop_628",
+      "baseline": {
+        "n": 7,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 6,
+        "sd": 6,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_653_2hop_987",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_130_2hop_501_rand",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 2,
+        "mism": 0,
+        "ld": 5,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_185_2hop_707_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 2,
+        "unc": 0,
+        "sfake": 2,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.6666666666666666,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_233_2hop_888_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_41_3hop_66",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_304_3hop_869_rand2",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_148_3hop_273",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_460_3hop_730",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_68_1hop_100",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_104_1hop_180",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_150_1hop_277",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_5_2hop_8",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_122_2hop_219",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_340_2hop_539",
+      "baseline": {
+        "n": 6,
+        "fake": 0,
+        "unc": 3,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_421_2hop_650",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_0_2hop_1_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_67_2hop_261_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 2,
+        "unc": 0,
+        "sfake": 2,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.6666666666666666,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_132_2hop_507_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_193_2hop_739_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_234_2hop_892_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_291_2hop_1111_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_104_3hop_182",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_309_3hop_881_rand2",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_168_3hop_301",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_493_3hop_773",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_32_1hop_49",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_69_1hop_102",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_105_1hop_183",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_152_1hop_280",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_17_2hop_25",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_125_2hop_226",
+      "baseline": {
+        "n": 6,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 2,
+        "mism": 0,
+        "ld": 6,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_233_2hop_388",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_343_2hop_541",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 4,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_423_2hop_656",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_8_2hop_33_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_70_2hop_273_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_134_2hop_515_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_197_2hop_752_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_239_2hop_912_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_366_3hop_580",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_32_3hop_51",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_495_3hop_777",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_1_1hop_2",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_72_1hop_108",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_116_1hop_207",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_155_1hop_283",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_249_2hop_406",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_356_2hop_565",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_430_2hop_668",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_552_2hop_839",
+      "baseline": {
+        "n": 6,
+        "fake": 0,
+        "unc": 3,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_23_2hop_93_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_80_2hop_313_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_139_2hop_535_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_242_2hop_923_rand",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_33_3hop_52",
+      "baseline": {
+        "n": 1,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 1.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_209_3hop_360",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_498_3hop_782",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_2_1hop_4",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_48_1hop_73",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_74_1hop_114",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_124_1hop_223",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 1,
+        "sd": 0,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_49_2hop_75",
+      "baseline": {
+        "n": 3,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_143_2hop_261",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_365_2hop_578",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_435_2hop_678",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_566_2hop_861",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_83_2hop_325_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_144_2hop_555_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 1.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_243_2hop_927_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_242_3hop_399",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_6_1hop_9",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_50_1hop_78",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_76_1hop_118",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_125_1hop_225",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_160_1hop_289",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_58_2hop_88",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_273_2hop_431",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_584_2hop_884",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_26_2hop_104_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 2,
+        "unc": 0,
+        "sfake": 2,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 1.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_85_2hop_333_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_145_2hop_559_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_206_2hop_786_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_244_2hop_931_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_608_3hop_919",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_274_3hop_434",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_550_3hop_837",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_13_1hop_18",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_52_1hop_80",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_80_1hop_125",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_162_1hop_291",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_59_2hop_90",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_158_2hop_287",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_281_2hop_441",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_368_2hop_584",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_602_2hop_910",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_28_2hop_112_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_157_2hop_606_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_207_2hop_790_rand",
+      "baseline": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 5,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_14_3hop_58_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_73_3hop_113",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 0,
+        "sd": 0,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_314_3hop_503",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_16_1hop_22",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_55_1hop_83",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_135_1hop_245",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_165_1hop_293",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_69_2hop_103",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_168_2hop_300",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_290_2hop_453",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_450_2hop_717",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_41_2hop_160_rand",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_92_2hop_361_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_159_2hop_614_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_209_2hop_798_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 2,
+        "unc": 0,
+        "sfake": 2,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 1.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_248_2hop_947_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 1.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_32_3hop_125_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_74_3hop_116",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_321_3hop_511",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_17_1hop_24",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_56_1hop_86",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_85_1hop_135",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_138_1hop_252",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_168_1hop_299",
+      "baseline": {
+        "n": 3,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_299_2hop_473",
+      "baseline": {
+        "n": 6,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_473_2hop_745",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_608_2hop_918",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_47_2hop_184_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_102_2hop_400_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_211_2hop_804_rand",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_250_2hop_955_rand",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_132_3hop_508_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_77_3hop_121",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_329_3hop_523",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_0_1hop_0",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_45_1hop_69",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_70_1hop_106",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_110_1hop_193",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_154_1hop_281",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_22_2hop_33",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_244_2hop_400",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 4,
+        "sd": 4,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_344_2hop_543",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_429_2hop_665",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 2,
+        "sd": 1,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_549_2hop_834",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 0,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_19_2hop_77_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_71_2hop_277_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_136_2hop_523_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 2,
+        "gold_tot": 2,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_198_2hop_756_rand",
+      "baseline": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_240_2hop_916_rand",
+      "baseline": {
+        "n": 2,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.5,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_297_2hop_1135_rand",
+      "baseline": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "ld": 3,
+        "sd": 2,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_293_3hop_839_rand2",
+      "baseline": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 1,
+        "sd": 1,
+        "gold_hit": 1,
+        "gold_tot": 1,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_136_3hop_249",
+      "baseline": {
+        "n": 3,
+        "fake": 1,
+        "unc": 0,
+        "sfake": 1,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 3,
+        "sd": 3,
+        "gold_hit": 1,
+        "gold_tot": 3,
+        "loose": 0.3333333333333333,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    },
+    {
+      "id": "qa_443_3hop_703",
+      "baseline": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "ld": 2,
+        "sd": 2,
+        "gold_hit": 0,
+        "gold_tot": 3,
+        "loose": 0.0,
+        "domain": "other",
+        "retry": 0,
+        "fact_gate_run": false,
+        "gate_clean": false
+      }
+    }
+  ]
+}

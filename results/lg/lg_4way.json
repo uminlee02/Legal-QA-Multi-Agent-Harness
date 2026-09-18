@@ -1,0 +1,106 @@
+{
+  "benchmark": "KoBLEX",
+  "gen": "Qwen3.5-27B",
+  "logic": "DeepSeek-R1-Distill-Qwen-32B",
+  "scorer": "법제처 Open API(real) + lawcheck v1",
+  "conditions": {
+    "1_pure": {
+      "loose": 0.22029372496662217,
+      "strict": 0.6013986013986014,
+      "n": 781,
+      "fake": 165,
+      "unc": 32,
+      "sfake": 430,
+      "cunk": 34,
+      "mism": 265,
+      "ld": 749,
+      "sd": 715,
+      "gold_hit": 49,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "2_ragonly": {
+      "loose": 0.037383177570093455,
+      "strict": 0.04133858267716536,
+      "n": 571,
+      "fake": 20,
+      "unc": 36,
+      "sfake": 21,
+      "cunk": 27,
+      "mism": 1,
+      "ld": 535,
+      "sd": 508,
+      "gold_hit": 194,
+      "gold_tot": 398,
+      "domain_dist": {
+        "other": 226
+      },
+      "retry_sum": 0,
+      "fact_gate_run": 0,
+      "gate_pass_clean": 0
+    },
+    "3_full_ungrounded": {
+      "loose": 0.03607503607503607,
+      "strict": 0.05625,
+      "n": 757,
+      "fake": 25,
+      "unc": 64,
+      "sfake": 36,
+      "cunk": 53,
+      "mism": 11,
+      "ld": 693,
+      "sd": 640,
+      "gold_hit": 196,
+      "gold_tot": 398,
+      "domain_dist": {
+        "civil": 61,
+        "criminal": 68,
+        "other": 97
+      },
+      "retry_sum": 158,
+      "fact_gate_run": 226,
+      "gate_pass_clean": 210
+    },
+    "4_full_grounded": {
+      "loose": 0.038011695906432746,
+      "strict": 0.05271317829457364,
+      "n": 764,
+      "fake": 26,
+      "unc": 80,
+      "sfake": 34,
+      "cunk": 39,
+      "mism": 8,
+      "ld": 684,
+      "sd": 645,
+      "gold_hit": 197,
+      "gold_tot": 398,
+      "domain_dist": {
+        "civil": 61,
+        "criminal": 68,
+        "other": 97
+      },
+      "retry_sum": 207,
+      "fact_gate_run": 226,
+      "gate_pass_clean": 211
+    }
+  },
+  "reductions": {
+    "③→④ (검증에 근거를 준 효과)": {
+      "loose_pct": -5.3684210526315805,
+      "strict_pct": 6.287683031869082
+    },
+    "②→④ (근거기반 검증이 RAG단독보다?)": {
+      "loose_pct": -1.6812865497076044,
+      "strict_pct": -27.515688445920993
+    },
+    "①→④ (전체)": {
+      "loose_pct": 82.74499379762538,
+      "strict_pct": 91.23490174869299
+    }
+  }
+}
