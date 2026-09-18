@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+  legal_qa_agent_demo.html — A2A·MCP MultiAgent 스타일(선배 시스템) 스탠드인.
+  ※ 데이터는 /api/ask 와 연결. 실제 디자인 HTML 주면 이 script만 이식.
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>법률 질의 응답 MultiAgent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#e23b3b; --red2:#c52f2f; --ink:#1f2329; --muted:#6b7280;
+    --bg:#f3f4f6; --card:#fff; --side:#fbfbfc; --line:#e5e7eb; --line2:#eef0f3;
+    --green:#15803d; --rd:#dc2626; --amber:#b45309; --gray:#6b7280;
+    --sans:"Noto Sans KR",system-ui,sans-serif; --mono:"JetBrains Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:14px}
+  .layout{display:flex;min-height:100vh}
+  /* 사이드바 */
+  .sidebar{width:284px;flex:none;background:var(--side);border-right:1px solid var(--line);
+           padding:20px 18px;display:flex;flex-direction:column;gap:20px}
+  .brand{font-weight:800;font-size:16px;letter-spacing:-.2px}
+  .brand .a2a{color:var(--red)}
+  .brand small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:3px}
+  .sb h4{margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9aa1ac;text-transform:uppercase}
+  .cfg{font-family:var(--mono);font-size:11.5px;line-height:1.7;color:#475063;background:#fff;
+       border:1px solid var(--line);border-radius:8px;padding:10px 12px;white-space:pre}
+  .cfg .k{color:var(--red2)}.cfg .v{color:#1f7a4d}
+  .tool{display:flex;align-items:center;gap:8px;font-size:13px;padding:8px 11px;background:#fff;
+        border:1px solid var(--line);border-radius:8px;margin-bottom:7px}
+  .tool .dot{width:7px;height:7px;border-radius:50%;background:#22c55e}
+  .tool .badge-mcp{margin-left:auto;font-family:var(--mono);font-size:9.5px;color:#7c8493;background:#f1f3f6;padding:1px 6px;border-radius:4px}
+  .sb-btns{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+  .b-run{background:var(--red);color:#fff;border:0;border-radius:8px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer}
+  .b-run:hover{background:var(--red2)}
+  .b-reset{background:#fff;color:#4b5563;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:13px;cursor:pointer}
+  .toggle{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#4b5563;cursor:pointer;user-select:none}
+  .toggle input{accent-color:var(--red)}
+  /* 메인 */
+  main{flex:1;padding:26px 32px 70px;max-width:900px}
+  h1{font-size:22px;font-weight:800;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:13px;margin:0 0 20px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:16px;padding:6px 13px;font-size:12.5px;cursor:pointer}
+  .chip:hover{border-color:var(--red);color:var(--red)}
+  .askbar{display:flex;gap:9px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 10px}
+  .askbar .ava{width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none}
+  .askbar input{flex:1;border:0;font-size:15px;outline:none;background:transparent}
+  .askbar button{background:var(--red);color:#fff;border:0;border-radius:8px;padding:9px 18px;font-weight:600;cursor:pointer}
+  .askbar button:disabled{opacity:.5}
+  /* 파이프라인 */
+  .pipe{display:none;gap:8px;justify-content:center;margin:24px 0}
+  .pipe.on{display:flex}
+  .step{display:flex;flex-direction:column;align-items:center;gap:5px;opacity:.4;transition:.3s}
+  .step.active{opacity:1}.step.done{opacity:.85}
+  .step .dot{width:38px;height:38px;border-radius:50%;background:#fff;border:2px solid var(--line);display:grid;place-items:center;font-size:16px}
+  .step.active .dot{border-color:var(--red);background:#fdeceb}
+  .step.done .dot{border-color:var(--green);background:#eafaf0;color:var(--green)}
+  .step small{font-size:11px;color:var(--muted)}.arrow{align-self:center;color:#cbd0d8}
+  /* 질의 버블 */
+  .bubble{display:none;align-items:flex-start;gap:10px;margin:18px 0}
+  .bubble.on{display:flex}
+  .bubble .ava{width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none}
+  .bubble .msg{background:#fff;border:1px solid var(--line);border-radius:4px 12px 12px 12px;padding:10px 14px;font-size:14.5px}
+  /* 리포트 */
+  .report{display:none}.report.on{display:block}
+  .rsec{margin:18px 0}
+  .rsec h2{font-size:16px;font-weight:800;margin:0 0 6px;padding-bottom:6px;border-bottom:2px solid var(--ink);display:inline-block}
+  .rsec .body{font-size:14.5px;line-height:1.85;white-space:pre-wrap;margin-top:8px}
+  .prov{border:1px solid var(--line);border-radius:10px;padding:13px 15px;margin-bottom:11px;background:#fff}
+  .prov .ph{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-bottom:7px}
+  .prov .pname{font-weight:700;font-size:14.5px}
+  .pill{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;border:1px solid}
+  .p-green{color:var(--green);border-color:#bbe6c8;background:#edf9f1}
+  .p-red{color:var(--rd);border-color:#f3c6c4;background:#fdeceb}
+  .p-amber{color:var(--amber);border-color:#ecd6a8;background:#fbf2dd}
+  .p-gray{color:var(--gray);border-color:var(--line);background:#f3f4f6}
+  .law-text{font-size:12.5px;line-height:1.7;color:#374151;background:#fafbfc;border:1px solid var(--line2);
+            border-left:3px solid var(--red);border-radius:6px;padding:9px 12px;margin:5px 0;white-space:pre-wrap}
+  .law-text .lbl{font-family:var(--mono);font-size:10px;color:var(--red2);font-weight:600;display:block;margin-bottom:3px}
+  .prov .note{font-size:13.5px;line-height:1.7;margin-top:5px}.prov .note b{color:var(--red2)}
+  .verify{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 15px;font-size:13px;margin-top:6px}
+  .verify .v{font-weight:700}.verify .m{color:var(--muted);font-size:11.5px;margin-top:3px}
+  .dl{display:none;margin:14px 0;background:var(--ink);color:#fff;text-decoration:none;padding:10px 18px;border-radius:9px;font-size:13.5px;font-weight:600}
+  .dl.on{display:inline-block}
+  /* MCP 툴 호출 로그 (그림4 스타일) */
+  .mcplog{display:none;margin-top:22px}.mcplog.on{display:block}
+  .mcplog>h2{font-size:16px;font-weight:800;margin:0 0 10px}
+  .mcplog>h2 .cnt{font-family:var(--mono);font-size:11px;color:#7c8493;background:#eef0f3;padding:2px 8px;border-radius:5px;margin-left:6px}
+  .entry{border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:#fff;overflow:hidden}
+  .entry summary{cursor:pointer;list-style:none;padding:10px 13px;font-family:var(--mono);font-size:12px;display:flex;align-items:center;gap:9px}
+  .entry summary::-webkit-details-marker{display:none}
+  .entry summary .ar{color:#9aa1ac;transition:.2s}.entry[open] summary .ar{transform:rotate(90deg)}
+  .entry summary .ts{color:#9aa1ac}.entry summary .ag{color:var(--ink);font-weight:600}
+  .entry summary .tl{color:var(--red2);font-weight:600}
+  .st{margin-left:auto;font-size:10.5px;font-weight:700;padding:1px 8px;border-radius:5px}
+  .st-ok{color:var(--green);background:#eafaf0}.st-fail{color:var(--rd);background:#fdeceb}.st-retry{color:var(--amber);background:#fbf2dd}
+  .entry pre{margin:0;padding:11px 14px;background:#0f1422;color:#cdd6e6;font-family:var(--mono);font-size:11.5px;line-height:1.7;overflow:auto;border-top:1px solid var(--line)}
+  .entry pre .jk{color:#7fb0e0}.entry pre .js{color:#9fd6a8}.entry pre .jn{color:#e0b54a}
+  .err{display:none;background:#fdeceb;color:var(--rd);border:1px solid #f3c6c4;border-radius:10px;padding:12px 16px;margin-top:14px}
+  .err.on{display:block}
+  @media(max-width:760px){.layout{flex-direction:column}.sidebar{width:auto}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="a2a">A2A · MCP</span> Legal Agent
+      <small>법제처 근거 법률 QA · 온프레미스</small></div>
+    <div class="sb">
+      <h4>에이전트 / 모델 구성</h4>
+      <div class="cfg"><span class="k">"generator"</span>: <span class="v">"exaone-3.5-7.8b"</span>,
+<span class="k">"cross-verify"</span>: <span class="v">"qwen2.5-7b"</span>,
+<span class="k">"retriever"</span>: <span class="v">"nlpai-lab/KoE5"</span>,
+<span class="k">"fact-verify"</span>: <span class="v">"law.go.kr API"</span>,
+<span class="k">"deploy"</span>: <span class="v">"on-prem · H200"</span></div>
+    </div>
+    <div class="sb">
+      <h4>사용 툴</h4>
+      <div class="tool"><span class="dot"></span>koe5_search<span class="badge-mcp">retriever</span></div>
+      <div class="tool"><span class="dot"></span>law_verify<span class="badge-mcp">법제처 API</span></div>
+      <div class="tool"><span class="dot"></span>cross_review<span class="badge-mcp">교차검증</span></div>
+      <div class="tool"><span class="dot"></span>create_legal_document<span class="badge-mcp">docx-MCP</span></div>
+    </div>
+    <div class="sb-btns">
+      <label class="toggle"><input type="checkbox" id="dry"> 드라이런 (문서생성 생략)</label>
+      <button class="b-run" id="run">파이프라인 실행</button>
+      <button class="b-reset" id="reset">로그 / 결과 초기화</button>
+    </div>
+  </aside>
+
+  <main>
+    <h1>법률 질의 응답 MultiAgent</h1>
+    <p class="sub">질문을 입력하면 검색·생성·법제처 검증·자율수정을 거쳐 근거 답변서를 생성합니다.</p>
+    <div class="chips" id="chips"></div>
+    <div class="askbar">
+      <div class="ava">법</div>
+      <input id="q" placeholder="법률 질문을 입력하세요 (예: 타인의 명예를 훼손하면 어떤 책임을 지나요?)" autocomplete="off">
+      <button id="ask">질의</button>
+    </div>
+
+    <div class="pipe" id="pipe">
+      <div class="step"><div class="dot">🔎</div><small>검색</small></div><div class="arrow">›</div>
+      <div class="step"><div class="dot">✍️</div><small>생성</small></div><div class="arrow">›</div>
+      <div class="step"><div class="dot">🔍</div><small>검증</small></div><div class="arrow">›</div>
+      <div class="step"><div class="dot">📄</div><small>문서</small></div>
+    </div>
+    <div class="err" id="err"></div>
+
+    <div class="bubble" id="bubble"><div class="ava">Q</div><div class="msg" id="b-msg"></div></div>
+
+    <div class="report" id="report">
+      <div class="rsec"><h2>요약</h2><div class="body" id="c-sum"></div></div>
+      <div class="rsec"><h2>관련 법령 및 해설</h2><div id="c-prov"></div></div>
+      <div class="rsec"><h2>결론</h2><div class="body" id="c-con"></div></div>
+      <div class="verify"><div class="v" id="c-verify"></div><div class="m" id="c-meta"></div></div>
+      <a class="dl" id="c-dl" href="#">📥 워드(.docx) 내려받기</a>
+      <a class="dl" id="c-pdf" href="#" style="margin-left:8px;background:#b3261e">📄 PDF 내려받기</a>
+    </div>
+
+    <div class="mcplog" id="mcplog">
+      <h2>MCP 툴 호출 로그<span class="cnt" id="log-n"></span></h2>
+      <div id="c-log"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+const EXAMPLES = [
+  "타인의 명예를 훼손하면 어떤 책임을 지나요?",
+  "타인의 물건을 훔치면 어떤 처벌을 받나요?",
+  "타인을 기망하여 재물을 편취한 경우 어떤 처벌을 받나요?",
+  "주택 임차인이 보증금을 보호받으려면 어떤 권리가 있나요?",
+  "교통사고로 타인에게 손해를 입혔을 때 손해배상 책임의 근거는 무엇인가요?",
+];
+const $ = s => document.querySelector(s);
+const esc = s => (s==null?"":String(s)).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
+EXAMPLES.forEach(t=>{const c=document.createElement("div");c.className="chip";c.textContent=t;
+  c.onclick=()=>{$("#q").value=t;ask();};$("#chips").appendChild(c);});
+
+let pipeTimer=null;
+function startPipe(){
+  ["#report","#mcplog","#bubble"].forEach(s=>$(s).classList.remove("on"));
+  $("#err").classList.remove("on");
+  const steps=[...document.querySelectorAll(".step")];steps.forEach(s=>s.classList.remove("active","done"));
+  $("#pipe").classList.add("on");let i=0;steps[0].classList.add("active");
+  pipeTimer=setInterval(()=>{if(i<steps.length-1){steps[i].classList.replace("active","done");i++;steps[i].classList.add("active");}},1300);
+}
+function stopPipe(){clearInterval(pipeTimer);
+  document.querySelectorAll(".step").forEach(s=>{s.classList.remove("active");s.classList.add("done");});
+  setTimeout(()=>$("#pipe").classList.remove("on"),350);}
+
+const existP=v=>v===true?["실존 ✓","p-green"]:v===false?["미존재 ✗","p-red"]:["확인필요 ⚠","p-amber"];
+const contP=v=>v===true?["내용일치 ✓","p-green"]:v===false?["내용불일치 ✗","p-red"]:["내용미확인 ·","p-gray"];
+
+function jsonHL(obj){
+  let s=esc(JSON.stringify(obj,null,2));
+  s=s.replace(/&quot;([^&]+)&quot;(\s*:)/g,'<span class="jk">&quot;$1&quot;</span>$2');
+  s=s.replace(/:\s*&quot;([^&]*)&quot;/g,': <span class="js">&quot;$1&quot;</span>');
+  s=s.replace(/:\s*(true|false|\d+\.?\d*)/g,': <span class="jn">$1</span>');
+  return s;
+}
+function renderAnswer(d){
+  $("#b-msg").textContent=d.question;$("#bubble").classList.add("on");
+  $("#c-sum").textContent=d.summary||"";$("#c-con").textContent=d.conclusion||"";
+  const box=$("#c-prov");box.innerHTML="";let okE=0,okC=0,totC=0,fake=0;
+  (d.provisions||[]).forEach(p=>{
+    if(p.exist===true)okE++;if(p.exist===false)fake++;
+    if(p.content!==null){totC++;if(p.content===true)okC++;}
+    const[et,ec]=existP(p.exist),[ct,cc]=contP(p.content);
+    const name=(p.law?p.law+" ":"")+p.article+(p.title?"("+p.title+")":"");
+    const div=document.createElement("div");div.className="prov";
+    div.innerHTML=`<div class="ph"><span class="pname">▸ ${esc(name)}</span>`+
+      `<span class="pill ${ec}">${et}</span><span class="pill ${cc}">${ct}</span></div>`+
+      `<div class="law-text"><span class="lbl">법제처 조문 원문</span>${esc(p.text)||"(법제처 확인 불가)"}</div>`+
+      `<div class="note"><b>해설</b> · ${esc(p.note)||"—"}</div>`;
+    box.appendChild(div);
+  });
+  const tot=(d.provisions||[]).length;
+  $("#c-verify").textContent=`인용 검증: ${okE}/${tot} 법제처 확인  ·  내용 일치: ${okC}/${totC}  ·  환각: ${fake}건`;
+  $("#c-meta").textContent=`자율 수정 ${d.self_correct}회  ·  생성 EXAONE-3.5-7.8B · 교차검증 Qwen2.5-7B(온프레미스)  ·  법제처 Open API 근거`;
+  const dl=$("#c-dl");
+  if(d.docx_url){dl.href=d.docx_url;dl.classList.add("on");}else dl.classList.remove("on");
+  const pdf=$("#c-pdf");
+  if(d.pdf_url){pdf.href=d.pdf_url;pdf.classList.add("on");}else pdf.classList.remove("on");
+  $("#report").classList.add("on");
+}
+function renderLog(rows){
+  const box=$("#c-log");box.innerHTML="";
+  (rows||[]).forEach(r=>{
+    const e=document.createElement("details");e.className="entry";
+    e.innerHTML=`<summary><span class="ar">▸</span>`+
+      `<span class="ts">[${esc(r.ts_iso||"")}]</span>`+
+      `<span class="ag">${esc(r.agent)}</span><span class="tl">${esc(r.tool)}</span>`+
+      `<span class="st st-${r.status}">${esc(r.status)}</span></summary>`+
+      `<pre>${jsonHL(r)}</pre>`;
+    box.appendChild(e);
+  });
+  $("#log-n").textContent=(rows||[]).length+" calls";
+  $("#mcplog").classList.add("on");
+}
+async function ask(){
+  const q=$("#q").value.trim();if(!q)return;
+  $("#ask").disabled=true;$("#run").disabled=true;startPipe();
+  try{
+    const r=await fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({question:q,dryrun:$("#dry").checked})});
+    if(!r.ok){const e=await r.json().catch(()=>({detail:r.statusText}));throw new Error(e.detail||("HTTP "+r.status));}
+    const d=await r.json();stopPipe();renderAnswer(d);renderLog(d.tool_log);
+  }catch(err){clearInterval(pipeTimer);$("#pipe").classList.remove("on");
+    const e=$("#err");e.textContent="오류: "+err.message;e.classList.add("on");}
+  finally{$("#ask").disabled=false;$("#run").disabled=false;}
+}
+function reset(){$("#q").value="";["#report","#mcplog","#bubble","#err"].forEach(s=>$(s).classList.remove("on"));}
+$("#ask").onclick=ask;$("#run").onclick=ask;$("#reset").onclick=reset;
+$("#q").addEventListener("keydown",e=>{if(e.key==="Enter")ask();});
+</script>
+</body>
+</html>

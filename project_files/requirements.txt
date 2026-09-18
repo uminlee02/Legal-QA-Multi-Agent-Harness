@@ -1,0 +1,5 @@
+# vLLM 은 시스템(conda)에 이미 설치됨 (0.23.0). 필요 시: pip install vllm
+openai>=1.0
+datasets>=2.0
+requests>=2.28
+# 법제처 호출은 표준 라이브러리 urllib 사용 (추가 의존성 없음)
