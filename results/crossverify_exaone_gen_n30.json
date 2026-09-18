@@ -1,0 +1,715 @@
+{
+  "model_gen": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "verify_self": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "verify_cross": "Qwen/Qwen2.5-7B-Instruct",
+  "use_rag": true,
+  "n": 30,
+  "self": {
+    "n": 118,
+    "cunk": 7,
+    "fixes": 16,
+    "unc": 16
+  },
+  "cross": {
+    "n": 101,
+    "fixes": 19,
+    "unc": 11,
+    "cunk": 5
+  },
+  "revise_q": {
+    "self": 10,
+    "cross": 11
+  },
+  "rows": [
+    {
+      "id": "qa_19_1hop_28",
+      "self": {
+        "n": 6,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 3,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "revise",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_92_1hop_149",
+      "self": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_139_1hop_254",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_172_1hop_308",
+      "self": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_90_2hop_147",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "revise",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_192_2hop_334",
+      "self": {
+        "n": 8,
+        "fake": 0,
+        "unc": 4,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 6,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_312_2hop_499",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_387_2hop_603",
+      "self": {
+        "n": 7,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "cross": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "revise",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_476_2hop_749",
+      "self": {
+        "n": 6,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 2,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_621_2hop_937",
+      "self": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_49_2hop_192_rand",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_116_2hop_452_rand",
+      "self": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_163_2hop_630_rand",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_213_2hop_812_rand",
+      "self": {
+        "n": 6,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "revise",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_257_2hop_983_rand",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_140_3hop_540_rand",
+      "self": {
+        "n": 4,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "revise",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_86_3hop_140",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "self_r0": "revise",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_352_3hop_554",
+      "self": {
+        "n": 6,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 6,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_61_1hop_93",
+      "self": {
+        "n": 4,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "self_r0": "revise",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_94_1hop_155",
+      "self": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 5,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_140_1hop_257",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "revise",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_174_1hop_312",
+      "self": {
+        "n": 1,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 1
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "revise",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_99_2hop_168",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_324_2hop_515",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_401_2hop_619",
+      "self": {
+        "n": 2,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 1,
+        "mism": 0,
+        "fixes": 1
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_488_2hop_766",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 6,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 2,
+        "mism": 0,
+        "fixes": 2
+      },
+      "self_r0": "ok",
+      "cross_r0": "revise"
+    },
+    {
+      "id": "qa_624_2hop_943",
+      "self": {
+        "n": 6,
+        "fake": 0,
+        "unc": 2,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_59_2hop_232_rand",
+      "self": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 2
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "revise",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_119_2hop_464_rand",
+      "self": {
+        "n": 7,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 5,
+        "fake": 0,
+        "unc": 0,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    },
+    {
+      "id": "qa_171_2hop_658_rand",
+      "self": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "cross": {
+        "n": 3,
+        "fake": 0,
+        "unc": 1,
+        "sfake": 0,
+        "cunk": 0,
+        "mism": 0,
+        "fixes": 0
+      },
+      "self_r0": "ok",
+      "cross_r0": "ok"
+    }
+  ]
+}
